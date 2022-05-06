@@ -1,0 +1,65 @@
+.content h1 {
+    /* margin-left: 10%; */
+}
+
+#list {
+    /* margin-top: 50px; */
+}
+
+#list > div {
+    display: flex;
+    justify-content: center;
+}
+
+#list > div > div {
+    margin-right: 40px;
+}
+
+.details {
+    list-style-type: none;
+}
+
+.details li {
+    line-height: 24px;
+}    
+
+.picture {
+    width: 250px;
+    height: 300px;
+    padding: 24px;
+}
+
+.pictureImg {
+    width: 240px;
+    height: 280px;
+}
+
+.description {    
+    width: 320px;
+    height: 300px;
+    padding: 20px;
+}
+
+@media (max-width: 420px) {
+    #list > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* set the description as the second */
+    #list > div:nth-child(2n) > div:first-child{
+        order: 2;
+    }
+
+    #list > div > div {
+        margin-right: 0px;
+    }
+
+    .picture, .description {
+        padding: 5px;
+    }
+
+    .details {
+        padding-inline-start: 24px;
+    }
+}
