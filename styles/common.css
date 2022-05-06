@@ -1,0 +1,21 @@
+* {
+    /* font-size: 14px; */
+    font-family: Roboto, sans-serif;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .content {
+        width: 90%;
+    }
+}  
