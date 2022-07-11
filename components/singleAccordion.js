@@ -92,12 +92,12 @@ function registerSingleAccordionActions() {
     const singleAccordionComps = document.querySelectorAll('us-single-accordion');
     singleAccordionComps.forEach(singleAccordion => {
         const saShadowRoot = singleAccordion.shadowRoot;
+        const accordion = saShadowRoot.querySelector('.accordion');
         const accordionNob = saShadowRoot.querySelector('.accordion .nob');
         const accordionDetails = saShadowRoot.querySelector('.accordion .details');
-        accordionNob.addEventListener('click', () => {
+        accordion.addEventListener('click', () => {
             accordionNob.classList.toggle('rotated');
             accordionDetails.classList.toggle('expand');
-        });
-           
+        });          
     });
 }
